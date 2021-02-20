@@ -1,0 +1,215 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "CONTINUE_MINTING",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_NAME",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_SYMBOL",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_DECIMAL_MULTIPLIER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_DECIMALS",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TARGET_USER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "PAUSED",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_DECIMALS_UINT8",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/TTDX.sol": "Consts"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/TTDX.sol": {
+			"keccak256": "0xe9206b67571681d07a23a478a8d57439e9488a859f780ed977f173aeed2d4cc3",
+			"urls": [
+				"bzzr://69cbd7a7bfa3da5cac05b34566947d5f257134c9a5661dc79f527dd4f525f280"
+			]
+		},
+		"browser/TTDXBEP20.sol": {
+			"keccak256": "0xe455f1da38212dceffd07623da8a8ea170d1349792a06b9bd3cbdd45727437be",
+			"urls": [
+				"bzzr://4cdb572b988b5f0267938c1219a25ece6ed69e7dcc9078617e67e10020f8c73b"
+			]
+		},
+		"browser/TTDXBEP20Basic.sol": {
+			"keccak256": "0xe83a8db4f97fb77f47ec4c45026a58404d2d88ab91a1fe26606af84d3a7a7031",
+			"urls": [
+				"bzzr://92da00f442e143f384eb69fe680e746ba2d9c4e7ea01d444d8c4fb7911e55578"
+			]
+		},
+		"browser/TTDXBasicToken.sol": {
+			"keccak256": "0xc6903d9acc11e8b6d92601a3f044bd7b292286c907e516710e9ea094af1e7ae7",
+			"urls": [
+				"bzzr://dd239354068d49165b27d1827435cfed5f7883d8dbaff5625d8510fbd02b9e2b"
+			]
+		},
+		"browser/TTDXBurnable.sol": {
+			"keccak256": "0xe305a549fce0de3cc1f4bf8df5b7567d60cae3d5b66a816075248a7fd1279eb1",
+			"urls": [
+				"bzzr://9c3af8f9e153d07dabf36e494e424785d0740ff846cd1c0698a8ac54ffe5d7f4"
+			]
+		},
+		"browser/TTDXFreezable.sol": {
+			"keccak256": "0x2ae8d8c08d7bc2c99e57967233aed9e2f00707ebfd7b94c922352b67111aaed1",
+			"urls": [
+				"bzzr://cecc4c11ab5faff768ddce35a22d9107bab109f0924843dbc443ef37a58f3ead"
+			]
+		},
+		"browser/TTDXFreezableMintableToken.sol": {
+			"keccak256": "0x4d9413cc4bf1efcbb92ae0a93ab688fd14032eee4bd75ae630097011a29820bf",
+			"urls": [
+				"bzzr://ff86970b6e758276af091e43448cd92bfefa384b17d206840ad3054ec303ab14"
+			]
+		},
+		"browser/TTDXMintable.sol": {
+			"keccak256": "0x1147b3fab2a761b84f425c6311d402350ee52b04cce2ca9058858ebcb2d28b48",
+			"urls": [
+				"bzzr://3aaa737a7fd17136498004146d22245de2ae8e1ba8791f99da068f7c110562f1"
+			]
+		},
+		"browser/TTDXOwnable.sol": {
+			"keccak256": "0xb112e42075cef5a75907d6ba52f3480da5a8d381ea558363d1297eb56d8556dc",
+			"urls": [
+				"bzzr://1aeebdd5dc11b4653df10b35475304aa9d36cad67e71151fcadcc66e258fcfdd"
+			]
+		},
+		"browser/TTDXPausable.sol": {
+			"keccak256": "0xd1c4a64640237981102640f929cb3749d630605aa31107269d98bcc8e1c38ba2",
+			"urls": [
+				"bzzr://133ef414b035ec924ba3c5ea6a82fa4f448bd2e10c978f447eadde10315fe926"
+			]
+		},
+		"browser/TTDXStandardToken.sol": {
+			"keccak256": "0xcc0f2144ebd8e1d507efdfde5a646e33b72199d48f999d7f06a3bce7efd08aeb",
+			"urls": [
+				"bzzr://a0dd84e28837f4e87317312143f6b6fa0a96f57c12d5266864b0311a0fbad675"
+			]
+		},
+		"browser/lib/safeMath.sol": {
+			"keccak256": "0x26095d6cf6e07b1096b0d052f2f880c92d20ef02ac9f81e347340d55837d6d67",
+			"urls": [
+				"bzzr://536e0d950f19e157873c13517f35319943bab2432416887352e236581c396d7b"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "burner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Burn",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address.",
+					"params": {
+						"_owner": "The address to query the the balance of."
+					},
+					"return": "An uint256 representing the amount owned by the passed address."
+				},
+				"burn(uint256)": {
+					"details": "Burns a specific amount of tokens.",
+					"params": {
+						"_value": "The amount of token to be burned."
+					}
+				},
+				"totalSupply()": {
+					"details": "total number of tokens in existence"
+				},
+				"transfer(address,uint256)": {
+					"details": "transfer token for a specified address",
+					"params": {
+						"_to": "The address to transfer to.",
+						"_value": "The amount to be transferred."
+					}
+				}
+			},
+			"title": "Burnable Token"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/TTDXBurnable.sol": "BurnableToken"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/TTDXBEP20Basic.sol": {
+			"keccak256": "0xe83a8db4f97fb77f47ec4c45026a58404d2d88ab91a1fe26606af84d3a7a7031",
+			"urls": [
+				"bzzr://92da00f442e143f384eb69fe680e746ba2d9c4e7ea01d444d8c4fb7911e55578"
+			]
+		},
+		"browser/TTDXBasicToken.sol": {
+			"keccak256": "0xc6903d9acc11e8b6d92601a3f044bd7b292286c907e516710e9ea094af1e7ae7",
+			"urls": [
+				"bzzr://dd239354068d49165b27d1827435cfed5f7883d8dbaff5625d8510fbd02b9e2b"
+			]
+		},
+		"browser/TTDXBurnable.sol": {
+			"keccak256": "0xe305a549fce0de3cc1f4bf8df5b7567d60cae3d5b66a816075248a7fd1279eb1",
+			"urls": [
+				"bzzr://9c3af8f9e153d07dabf36e494e424785d0740ff846cd1c0698a8ac54ffe5d7f4"
+			]
+		},
+		"browser/lib/safeMath.sol": {
+			"keccak256": "0x26095d6cf6e07b1096b0d052f2f880c92d20ef02ac9f81e347340d55837d6d67",
+			"urls": [
+				"bzzr://536e0d950f19e157873c13517f35319943bab2432416887352e236581c396d7b"
+			]
+		}
+	},
+	"version": 1
+}

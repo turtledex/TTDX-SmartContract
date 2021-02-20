@@ -1,0 +1,1029 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "CONTINUE_MINTING",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getFreezing",
+				"outputs": [
+					{
+						"name": "_release",
+						"type": "uint64"
+					},
+					{
+						"name": "_balance",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "mintingFinished",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"name": "_until",
+						"type": "uint64"
+					}
+				],
+				"name": "mintAndFreeze",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "initialized",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "actualBalanceOf",
+				"outputs": [
+					{
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_NAME",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"name": "_success",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_SYMBOL",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"name": "_decimals",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"name": "_until",
+						"type": "uint64"
+					}
+				],
+				"name": "freezeTo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "unpause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_DECIMAL_MULTIPLIER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_DECIMALS",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "releaseAll",
+				"outputs": [
+					{
+						"name": "tokens",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"name": "_subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseApproval",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "releaseOnce",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TARGET_USER",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "finishMinting",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "pause",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"name": "_symbol",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "_success",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "PAUSED",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "freezingCount",
+				"outputs": [
+					{
+						"name": "count",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "TOKEN_DECIMALS_UINT8",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"name": "_addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseApproval",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "freezingBalanceOf",
+				"outputs": [
+					{
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"name": "_spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "Initialized",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "Pause",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "Unpause",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "burner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Burn",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Mint",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "MintFinished",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipRenounced",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "release",
+						"type": "uint64"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Freezed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Released",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"actualBalanceOf(address)": {
+					"details": "Gets the balance of the specified address without freezing tokens.",
+					"params": {
+						"_owner": "The address to query the the balance of."
+					},
+					"return": "An uint256 representing the amount owned by the passed address."
+				},
+				"allowance(address,address)": {
+					"details": "Function to check the amount of tokens that an owner allowed to a spender.",
+					"params": {
+						"_owner": "address The address which owns the funds.",
+						"_spender": "address The address which will spend the funds."
+					},
+					"return": "A uint256 specifying the amount of tokens still available for the spender."
+				},
+				"approve(address,uint256)": {
+					"details": "Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.   * Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards:",
+					"params": {
+						"_spender": "The address which will spend the funds.",
+						"_value": "The amount of tokens to be spent."
+					}
+				},
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address include freezing tokens.",
+					"params": {
+						"_owner": "The address to query the the balance of."
+					},
+					"return": "An uint256 representing the amount owned by the passed address."
+				},
+				"burn(uint256)": {
+					"details": "Burns a specific amount of tokens.",
+					"params": {
+						"_value": "The amount of token to be burned."
+					}
+				},
+				"decreaseApproval(address,uint256)": {
+					"details": "Decrease the amount of tokens that an owner allowed to a spender.   * approve should be called when allowed[_spender] == 0. To decrement allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol",
+					"params": {
+						"_spender": "The address which will spend the funds.",
+						"_subtractedValue": "The amount of tokens to decrease the allowance by."
+					}
+				},
+				"finishMinting()": {
+					"details": "Function to stop minting new tokens.",
+					"return": "True if the operation was successful."
+				},
+				"freezeTo(address,uint256,uint64)": {
+					"details": "freeze your tokens to the specified address.     Be careful, gas usage is not deterministic,     and depends on how many freezes _to address already has.",
+					"params": {
+						"_amount": "Amount of token to freeze.",
+						"_to": "Address to which token will be freeze.",
+						"_until": "Release date, must be in future."
+					}
+				},
+				"freezingCount(address)": {
+					"details": "gets freezing count",
+					"params": {
+						"_addr": "Address of freeze tokens owner."
+					}
+				},
+				"getFreezing(address,uint256)": {
+					"details": "gets freezing end date and freezing balance for the freezing portion specified by index.",
+					"params": {
+						"_addr": "Address of freeze tokens owner.",
+						"_index": "Freezing portion index. It ordered by release date descending."
+					}
+				},
+				"increaseApproval(address,uint256)": {
+					"details": "Increase the amount of tokens that an owner allowed to a spender.   * approve should be called when allowed[_spender] == 0. To increment allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol",
+					"params": {
+						"_addedValue": "The amount of tokens to increase the allowance by.",
+						"_spender": "The address which will spend the funds."
+					}
+				},
+				"mint(address,uint256)": {
+					"details": "Function to mint tokens",
+					"params": {
+						"_amount": "The amount of tokens to mint.",
+						"_to": "The address that will receive the minted tokens."
+					},
+					"return": "A boolean that indicates if the operation was successful."
+				},
+				"mintAndFreeze(address,uint256,uint64)": {
+					"details": "Mint the specified amount of token to the specified address and freeze it until the specified date.     Be careful, gas usage is not deterministic,     and depends on how many freezes _to address already has.",
+					"params": {
+						"_amount": "Amount of token to mint and freeze.",
+						"_to": "Address to which token will be freeze.",
+						"_until": "Release date, must be in future."
+					},
+					"return": "A boolean that indicates if the operation was successful."
+				},
+				"pause()": {
+					"details": "called by the owner to pause, triggers stopped state"
+				},
+				"releaseAll()": {
+					"details": "release all available for release freezing tokens. Gas usage is not deterministic!",
+					"return": "how many tokens was released"
+				},
+				"releaseOnce()": {
+					"details": "release first available freezing tokens."
+				},
+				"renounceOwnership()": {
+					"details": "Allows the current owner to relinquish control of the contract."
+				},
+				"totalSupply()": {
+					"details": "total number of tokens in existence"
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"_newOwner": "The address to transfer ownership to."
+					}
+				},
+				"unpause()": {
+					"details": "called by the owner to unpause, returns to normal state"
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"browser/TTDX.sol": "TTDXToken"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"browser/TTDX.sol": {
+			"keccak256": "0xe9206b67571681d07a23a478a8d57439e9488a859f780ed977f173aeed2d4cc3",
+			"urls": [
+				"bzzr://69cbd7a7bfa3da5cac05b34566947d5f257134c9a5661dc79f527dd4f525f280"
+			]
+		},
+		"browser/TTDXBEP20.sol": {
+			"keccak256": "0xe455f1da38212dceffd07623da8a8ea170d1349792a06b9bd3cbdd45727437be",
+			"urls": [
+				"bzzr://4cdb572b988b5f0267938c1219a25ece6ed69e7dcc9078617e67e10020f8c73b"
+			]
+		},
+		"browser/TTDXBEP20Basic.sol": {
+			"keccak256": "0xe83a8db4f97fb77f47ec4c45026a58404d2d88ab91a1fe26606af84d3a7a7031",
+			"urls": [
+				"bzzr://92da00f442e143f384eb69fe680e746ba2d9c4e7ea01d444d8c4fb7911e55578"
+			]
+		},
+		"browser/TTDXBasicToken.sol": {
+			"keccak256": "0xc6903d9acc11e8b6d92601a3f044bd7b292286c907e516710e9ea094af1e7ae7",
+			"urls": [
+				"bzzr://dd239354068d49165b27d1827435cfed5f7883d8dbaff5625d8510fbd02b9e2b"
+			]
+		},
+		"browser/TTDXBurnable.sol": {
+			"keccak256": "0xe305a549fce0de3cc1f4bf8df5b7567d60cae3d5b66a816075248a7fd1279eb1",
+			"urls": [
+				"bzzr://9c3af8f9e153d07dabf36e494e424785d0740ff846cd1c0698a8ac54ffe5d7f4"
+			]
+		},
+		"browser/TTDXFreezable.sol": {
+			"keccak256": "0x2ae8d8c08d7bc2c99e57967233aed9e2f00707ebfd7b94c922352b67111aaed1",
+			"urls": [
+				"bzzr://cecc4c11ab5faff768ddce35a22d9107bab109f0924843dbc443ef37a58f3ead"
+			]
+		},
+		"browser/TTDXFreezableMintableToken.sol": {
+			"keccak256": "0x4d9413cc4bf1efcbb92ae0a93ab688fd14032eee4bd75ae630097011a29820bf",
+			"urls": [
+				"bzzr://ff86970b6e758276af091e43448cd92bfefa384b17d206840ad3054ec303ab14"
+			]
+		},
+		"browser/TTDXMintable.sol": {
+			"keccak256": "0x1147b3fab2a761b84f425c6311d402350ee52b04cce2ca9058858ebcb2d28b48",
+			"urls": [
+				"bzzr://3aaa737a7fd17136498004146d22245de2ae8e1ba8791f99da068f7c110562f1"
+			]
+		},
+		"browser/TTDXOwnable.sol": {
+			"keccak256": "0xb112e42075cef5a75907d6ba52f3480da5a8d381ea558363d1297eb56d8556dc",
+			"urls": [
+				"bzzr://1aeebdd5dc11b4653df10b35475304aa9d36cad67e71151fcadcc66e258fcfdd"
+			]
+		},
+		"browser/TTDXPausable.sol": {
+			"keccak256": "0xd1c4a64640237981102640f929cb3749d630605aa31107269d98bcc8e1c38ba2",
+			"urls": [
+				"bzzr://133ef414b035ec924ba3c5ea6a82fa4f448bd2e10c978f447eadde10315fe926"
+			]
+		},
+		"browser/TTDXStandardToken.sol": {
+			"keccak256": "0xcc0f2144ebd8e1d507efdfde5a646e33b72199d48f999d7f06a3bce7efd08aeb",
+			"urls": [
+				"bzzr://a0dd84e28837f4e87317312143f6b6fa0a96f57c12d5266864b0311a0fbad675"
+			]
+		},
+		"browser/lib/safeMath.sol": {
+			"keccak256": "0x26095d6cf6e07b1096b0d052f2f880c92d20ef02ac9f81e347340d55837d6d67",
+			"urls": [
+				"bzzr://536e0d950f19e157873c13517f35319943bab2432416887352e236581c396d7b"
+			]
+		}
+	},
+	"version": 1
+}
