@@ -10,7 +10,8 @@ You can find $TTDX contract on BSC at the following addresses :
 **Mainnet**: [0xFF8888d4f46Ed54BbbAbF554d81b65EF3596B12C](https://bscscan.com/token/0xFF8888d4f46Ed54BbbAbF554d81b65EF3596B12C)
 
 Our Smart-Contract has been **audited**, by TechRate in february 2021 : it is **SAFE**!
-[Consult the security audit report.](https://github.com/Trutledex-io/TTDX-SmartContract/blob/main/audit/Turtledex_audit.pdf)
+
+[Consult the security audit report.](https://github.com/TurtleDex-io/TTDX-SmartContract/blob/main/audit/Turtledex_audit.pdf)
 
 ## $TTDX Token
 
