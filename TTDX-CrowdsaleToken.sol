@@ -675,7 +675,7 @@ contract Consts {
 
 
 
-contract SuperToken is Consts, FreezableMintableToken, BurnableToken, Pausable
+contract TTDXToken is Consts, FreezableMintableToken, BurnableToken, Pausable
     
 {
         
