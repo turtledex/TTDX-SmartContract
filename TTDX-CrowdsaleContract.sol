@@ -1274,7 +1274,7 @@ contract BonusableCrowdsale is Consts, Crowdsale {
         // Bonuses [0-6] -> amount -  [7-13] -> Time
         uint[14] memory weiRaisedAndTimeRates = [uint(1000),uint(700),uint(350),uint(200),uint(120),uint(50),uint(25),uint(1000),uint(700),uint(350),uint(200),uint(120),uint(50),uint(25)];
 
-        for (uint i = 0; i < 7; i++) {
+        for (uint i = 0; i < 14; i++) {
             bool weiRaisedInBound = (weiRaised >= weiRaisedStartsBounds[i]) && (weiRaised < weiRaisedEndsBounds[i]);
             bool timeInBound = (now >= timeStartsBounds[i]) && (now < timeEndsBounds[i]);
             if (weiRaisedInBound || timeInBound) {
